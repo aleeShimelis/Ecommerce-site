@@ -1,39 +1,87 @@
+/*
+background-color: #f4f3ff;
+    color: #6a57ff;
+    background-color: #c8c2fc;
+
+
 /* General Styles */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
     background-color: #f8f9fa;
     color: #333;
 }
 
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+p {
+    margin: 0.5em 0;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    padding: 10px 15px;
+    background-color: #f4f3ff;
+    color: #6a57ff;
+    border-radius: 7px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c8c2fc;
+}
+
+
 header {
-    background-color: #fff;
+    background-color: #6a57ff;
     padding: 10px 20px;
-    border-bottom: 1px solid #ddd;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
 }
 
-header nav ul {
+header nav {
     display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
     gap: 20px;
 }
 
-header nav ul li a {
-    text-decoration: none;
-    color: inherit;
-    padding: 10px 15px;
-    border-radius: 5px;
+/* Update navigation bar styles for better alignment */
+header nav ul {
+    display: flex;
+    justify-content: space-around; /* Even spacing for buttons */
+    align-items: center; /* Aligns buttons vertically */
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-header nav ul li a.active {
-    background-color: #007bff;
-    color: #fff;
+header nav ul li {
+    margin: 0; /* Remove inconsistent margins */
+    padding: 0; /* Reset padding for uniformity */
 }
+
+header nav ul li a {
+    padding: 10px 25px; /* Add padding for better button click area */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #d2cdfc; /* Highlight on hover */
+    color: #000000;
+}
+
+
 
 main {
     padding: 20px;
@@ -144,8 +192,8 @@ main {
     width: auto; /* Allow natural width based on content */
     padding: 10px 20px; /* Adjust padding for a smaller button */
     margin-top: 20px; /* Add space between the button and the summary content */
-    background-color: #007bff;
-    color: #fff;
+    background-color: #6a57ff;
+    color: #ffffff;
     font-size: 1rem;
     border: none;
     border-radius: 5px;
@@ -155,7 +203,7 @@ main {
 }
 
 .checkout-btn:hover {
-    background-color: #0056b3;
+    background-color: #4d3bdc;
 }
 
 

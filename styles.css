@@ -30,7 +30,7 @@ button {
 }
 
 button:hover {
-    background-color: #e1defd;
+    background-color: #c8c2fc;
 }
 
 /* Header */
@@ -109,6 +109,11 @@ header nav ul li a:hover {
 }
 
 /* Product List */
+#products {
+    padding: 10px 10px; /* Add matching padding for alignment */
+    margin: 5px 5px; /* Add margin to align with #filters */
+}
+
 .product-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -116,36 +121,71 @@ header nav ul li a:hover {
     padding: 20px;
 }
 
+/* Product Card Layout */
 .product {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: space-between;
     padding: 15px;
+    height: 350px; /* Uniform height for cards */
+    overflow: hidden; /* Ensure no content spills out */
+    text-align: center;
 }
 
+/* Fixed Image Frame */
 .product img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 120px; /* Fixed height for the image frame */
+    object-fit: cover; /* Maintain aspect ratio and crop if needed */
     border-bottom: 1px solid #ddd;
-    margin-bottom: 10px;
 }
 
+/* Product Heading */
 .product h3 {
+    font-size: 1.1em;
     margin: 10px 0;
-    font-size: 1.2em;
 }
 
+/* Product Price */
 .product p {
     font-size: 1em;
     color: #555;
+    margin: 5px 0;
 }
 
+/* Scrollable Product Description */
+.product .description {
+    flex-grow: 1; /* Fills the available vertical space */
+    margin: 10px 0;
+    font-size: 0.9rem;
+    color: #777;
+    line-height: 1.4;
+    overflow-y: auto; /* Enable scrolling for overflowing content */
+    max-height: 70px; /* Set a fixed height for the description area */
+    padding: 5px; /* Add some padding for readability */
+    border: 1px solid #ddd; /* Optional: Add a border for clarity */
+    border-radius: 5px; /* Rounded corners for better aesthetics */
+}
+
+
+/* Add to Cart Button */
 .add-to-cart {
-    margin-top: 10px;
-    width: 100%;
+    margin-top: 10px; /* Space above the button */
+    padding: 10px 15px;
+    background-color: #f4f3ff;
+    color: #6a57ff;
+    border-radius: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #c8c2fc;
 }
 
 
@@ -180,11 +220,13 @@ header nav ul li a:hover {
 .hero-content {
     position: relative;
     z-index: 2;
-    background: rgba(0, 0, 0, 0.4); /* Add a semi-transparent overlay */
+    background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
     padding: 20px;
     border-radius: 20px; /* Optional: Rounded corners for the content block */
     max-width: 600px;
+    
 }
+
 
 #image1 {
     position: absolute;
@@ -231,7 +273,7 @@ header nav ul li a:hover {
 }
 
 #next-btn {
-    background-color: #0056b3;
+    background-color: #6a57ff;
     color: #fff;
     padding: 10px 20px;
     font-size: 1rem;
@@ -243,7 +285,7 @@ header nav ul li a:hover {
 }
 
 #next-btn:hover {
-    background-color: #0056b3;
+    background-color: #5d4aee;
 }
 
 
