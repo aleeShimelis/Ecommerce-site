@@ -58,6 +58,7 @@ header nav ul {
     list-style: none;
 }
 
+
 header nav ul li {
     margin: 0; /* Remove inconsistent margins */
     padding: 0; /* Reset padding for uniformity */
@@ -65,7 +66,7 @@ header nav ul li {
 
 header nav ul li a {
     padding: 10px 25px; /* Add padding for better button click area */
-    border-radius: 5px;
+    border-radius: 25px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -74,10 +75,28 @@ header nav ul li a:hover {
     color: #000000;
 }
 
+header #signup a{
+    padding: 10px 25px; /* Add padding for better button click area */
+    border-radius: 25px;
+    margin-left: 550px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header #signup a:hover {
+    background-color: #d2cdfc; /* Highlight on hover */
+    color: #000000;
+}
+
+header #cart {
+    margin-right: 20px;
+}
 
 .search-bar {
+    margin-left: auto; /* Optional: Align with the filter section */
     display: flex;
     gap: 10px;
+    width: 400px;
+
 }
 
 .search-bar input {
@@ -86,6 +105,7 @@ header nav ul li a:hover {
     border-radius: 5px;
     flex-grow: 1;
 }
+
 
 /* Filters */
 #filters {
@@ -152,8 +172,9 @@ header nav ul li a:hover {
 /* Product Price */
 .product p {
     font-size: 1em;
-    color: #555;
+    color: #383838;
     margin: 5px 0;
+    
 }
 
 /* Scrollable Product Description */
@@ -220,7 +241,7 @@ header nav ul li a:hover {
 .hero-content {
     position: relative;
     z-index: 2;
-    background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
+    background: rgba(0, 0, 0, 0.3); /* Add a semi-transparent overlay */
     padding: 20px;
     border-radius: 20px; /* Optional: Rounded corners for the content block */
     max-width: 600px;
@@ -334,7 +355,7 @@ footer {
 }
 
 .footer-column ul li a:hover {
-    color: #007bff;
+    color: #fbfbfb;
 }
 
 footer form {
@@ -361,6 +382,10 @@ footer button {
 
 footer button:hover {
     background-color: #e1defd;
+}
+
+footer #r {
+    color: #aea9db;
 }
 
 /* Mobile Responsiveness for Footer */
@@ -391,3 +416,95 @@ footer button:hover {
     }
 }
 
+
+
+/* Shared Auth Page Styles for login and signup pages */
+.auth-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.auth-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #6a57ff;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.auth-form label {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.auth-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.auth-button {
+    padding: 10px 15px;
+    background-color: #6a57ff;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-button:hover {
+    background-color: #5d4aee;
+}
+
+.auth-container p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.auth-container p a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-container p a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .auth-container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .auth-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .auth-form input {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .auth-button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
