@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>ShopName</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#footer">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search for products...">
+            <button id="search-btn">Search</button>
+        </div>
+    </header>
+    
+    
+    <main>
+        <div class="hero">   
+            <div id="image1">
+                <img src="assets\pictures\heroo.jpg" alt="image1">
+            </div>
+
+            <div class="hero-content">
+                <h1>Welcome to ShopName</h1>
+                <p>Your one-stop shop for the best products at unbeatable prices!</p>
+                <a href="#products" class="btn-hero">Shop Now</a>
+            </div>
+
+        </div>
+        
+        <section id="filters">
+            <h2>Filter Products</h2>
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="all">All</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+              
+            </select>
+        </section>
+
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product-list">
+                <!-- Electronics -->
+                <div class="product" data-category="electronics">
+                    <img src="assets\pictures\products\smartphone1.jpg" alt="Smartphone">
+                    <h3>Smartphone</h3>
+                    <p>$299.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-category="electronics">
+                    <img src="assets\pictures\products\laptop1.jpg" alt="Laptop">
+                    <h3>Laptop</h3>
+                    <p>$799.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-category="electronics">
+                    <img src="assets\pictures\products\headphone1.jpg" alt="Headphones">
+                    <h3>Headphones</h3>
+                    <p>$49.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-category="electronics">
+                    <img src="assets\pictures\products\smartwatch1.jpg" alt="Smartwatch">
+                    <h3>Smartwatch</h3>
+                    <p>$199.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-category="electronics">
+                    <img src="assets\pictures\products\tablet1.jpg" alt="Tablet">
+                    <h3>Tablet</h3>
+                    <p>$399.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+        
+                <!-- Clothing -->
+                <div class="product" data-category="clothing">
+                    <img src="placeholder.jpg" alt="T-Shirt">
+                    <h3>T-Shirt</h3>
+                    <p>$19.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-category="clothing">
+                    <img src="placeholder.jpg" alt="Jeans">
+                    <h3>Jeans</h3>
+                    <p>$39.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-category="clothing">
+                    <img src="placeholder.jpg" alt="Jacket">
+                    <h3>Jacket</h3>
+                    <p>$89.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-category="clothing">
+                    <img src="placeholder.jpg" alt="Sneakers">
+                    <h3>Sneakers</h3>
+                    <p>$59.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-category="clothing">
+                    <img src="placeholder.jpg" alt="Hat">
+                    <h3>Hat</h3>
+                    <p>$14.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+        
+                <!-- Home -->
+                <div class="product" data-category="home">
+                    <img src="placeholder.jpg" alt="Lamp">
+                    <h3>Lamp</h3>
+                    <p>$24.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-category="home">
+                    <img src="placeholder.jpg" alt="Rug">
+                    <h3>Rug</h3>
+                    <p>$49.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-category="home">
+                    <img src="placeholder.jpg" alt="Chair">
+                    <h3>Chair</h3>
+                    <p>$129.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-category="home">
+                    <img src="placeholder.jpg" alt="Desk">
+                    <h3>Desk</h3>
+                    <p>$199.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-category="home">
+                    <img src="placeholder.jpg" alt="Bookshelf">
+                    <h3>Bookshelf</h3>
+                    <p>$99.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <section id="products">
+                <div class="product-list">
+                    <!-- Product Items Here -->
+                </div>
+                
+                <div class="pagination">
+                    <button id="next-btn">Next</button>
+                </div>
+                <br>
+            </section>
+            
+        </section>
+        
+    </main>
+
+    <footer>
+        <footer id="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p>Email: support@shopname.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Address: 123 E-commerce St, Shop City, SC 12345</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#cart">Cart</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <ul class="social-links">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Subscribe</h3>
+                    <p>Sign up for our newsletter to get the latest updates.</p>
+                    <form>
+                        <input type="email" placeholder="Your email" />
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+        
+
+        <p>© 2024 ShopName. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
