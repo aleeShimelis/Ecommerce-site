@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="icon" href="assets\pictures\SHOPTREELOGO.png" type="image/x-icon">
+    <link rel="stylesheet" href="profile_page.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>ShopTree</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="profile.html" class="active">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile-header">
+            <div class="profile-picture">
+                <img src="assets/pictures/profile_user.png" alt="Profile Picture">
+            </div>
+            <div class="profile-info">
+                <h1>John Doe</h1>
+                <p>Email: johndoe@example.com</p>
+                <p>Member Since: January 2022</p>
+            </div>
+        </section>
+
+       
+
+        <section class="profile-content">
+            <!-- Recent Purchases -->
+            <div class="section">
+                <h2>Recent Purchases</h2>
+                <ul class="purchases">
+                    <li>Product A - $49.99</li>
+                    <li>Product B - $19.99</li>
+                    <li>Product C - $29.99</li>
+                </ul>
+            </div>
+
+            <!-- Products Uploaded for Sale -->
+            <div class="section">
+                <h2>Products Uploaded for Sale</h2>
+                <ul class="uploads">
+                    <li>Product X - $99.99</li>
+                    <li>Product Y - $79.99</li>
+                </ul>
+            </div>
+
+            <!-- User Analytics -->
+            <div class="section">
+                <h2>User Analytics</h2>
+                <p>Total Purchases: <strong>15</strong></p>
+                <p>Total Sales: <strong>$1500.00</strong></p>
+            </div>
+
+            <!-- Notifications -->
+            <div class="section notifications">
+                <h2>Notifications</h2>
+                <ul>
+                    <li>Special discount on your next purchase!</li>
+                    <li>Product Z is back in stock.</li>
+                    <li>Your uploaded product Product Y was sold!</li>
+                </ul>
+            </div>
+        </section>
+        <!-- <section class="add-product">
+            <h2>Add Product for Sale</h2>
+            <form id="add-product-form">
+                <label for="product-name">Product Name:</label>
+                <input type="text" id="product-name" name="product-name" required>
+        
+                <label for="product-price">Price:</label>
+                <input type="number" id="product-price" name="product-price" required>
+        
+                <label for="product-description">Description:</label>
+                <textarea id="product-description" name="product-description" required></textarea>
+        
+                <label for="product-image">Image:</label>
+                <input type="file" id="product-image" name="product-image" accept="image/*" required>
+        
+                <button type="submit">Add Product</button>
+            </form>
+        </section> -->
+
+    </main>
+
+    <footer>
+        <p>© 2024 ShopTree. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

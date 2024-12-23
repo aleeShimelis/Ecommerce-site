@@ -1,0 +1,187 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #6a57ff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav h1{
+    color: white;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around; /* Even spacing for buttons */
+    align-items: center; /* Aligns buttons vertically */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0; /* Remove inconsistent margins */
+    padding: 0; /* Reset padding for uniformity */
+}
+
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    margin: 5px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+
+header nav ul li a.active {
+    background-color: #c8c2fc;
+    color: #6a57ff;
+}
+
+header nav ul li a:hover {
+    background-color: #c8c2fc;
+    color: #6a57ff;
+}
+
+/* Profile Header */
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Profile Content Sections */
+.profile-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+.section {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* .add-product {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 150px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-product h2 {
+    margin-bottom: 20px;
+}
+
+.add-product form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-product label {
+    margin-bottom: 5px;
+}
+
+.add-product input,
+.add-product textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-product button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6a57ff;
+    color: white;
+    cursor: pointer;
+}
+
+.add-product button:hover {
+    background-color: #4b38db;
+} */
+
+.section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section ul li {
+    margin: 5px 0;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.section ul li:last-child {
+    border-bottom: none;
+}
+
+.notifications ul {
+    padding-left: 0;
+}
+
+.notifications ul li {
+    margin: 10px 0;
+    color: #6a57ff;
+}
+
+/* Footer */
+footer {
+    background-color: #6a57ff;
+    text-align: center;
+    color: #aea9db;;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}

@@ -67,6 +67,7 @@ header nav ul li {
 header nav ul li a {
     padding: 10px 25px; /* Add padding for better button click area */
     border-radius: 25px;
+    margin: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -78,7 +79,7 @@ header nav ul li a:hover {
 header #signup a{
     padding: 10px 25px; /* Add padding for better button click area */
     border-radius: 25px;
-    margin-left: 550px;
+    margin-left: 600px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -96,6 +97,7 @@ header #cart {
     display: flex;
     gap: 10px;
     width: 400px;
+    margin-top: -40px;
 
 }
 
@@ -478,7 +480,7 @@ footer #r {
 }
 
 .auth-container p a {
-    color: #007bff;
+    color: #6a57ff;
     text-decoration: none;
     font-weight: bold;
 }
